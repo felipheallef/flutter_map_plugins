@@ -6,7 +6,7 @@
 import 'dart:typed_data' as _i4;
 
 import 'package:mbtiles/src/mbtiles.dart' as _i3;
-import 'package:mbtiles/src/model/mbtiles_metadata.dart' as _i2;
+import 'package:mbtiles/src/model/metadata.dart' as _i2;
 import 'package:mockito/mockito.dart' as _i1;
 
 // ignore_for_file: type=lint
@@ -86,8 +86,8 @@ class MockMbTiles extends _i1.Mock implements _i3.MbTiles {
       );
 
   @override
-  void dispose() => super.noSuchMethod(
-        Invocation.method(#dispose, []),
+  void close() => super.noSuchMethod(
+        Invocation.method(#close, []),
         returnValueForMissingStub: null,
       );
 }
